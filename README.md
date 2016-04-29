@@ -13,7 +13,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 A great plugin to implement custom styled by themes.
 
 == Description ==
-* Author: [Mohammad Hasan Behzadi](http://www.codestylish.com/contact)
+* Author: [Mohammad Hasan Behzadi](http://www.codestylish.com/)
 * Project URI: <http://www.github.com/behzadi/wpjqp-datepicker>
 
 Easy to implement with a simple CSS selector input field.
