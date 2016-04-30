@@ -125,7 +125,7 @@ if (!function_exists('wpjqpdp_footer_scripts')) {
             ?>
 
                     //$("<?php echo $wpjqpdp_selectors; ?>").persianDatepicker({<?php echo implode(', ', $options); ?>});
-                    $("<?php echo $wpjqpdp_selectors; ?>").each(function(){
+                    jQuery("<?php echo $wpjqpdp_selectors; ?>").each(function(){
                         var o = $(this).data("options");
                         $(this).persianDatepicker(o); 
                     });
