@@ -61,11 +61,9 @@ function register_wpjqpdp_scripts() {
     if (is_admin()) {
 
         wp_enqueue_media();
-
-
     } else {
         
-    }    
+    }
 
     wp_register_style('wpjqpdp-default', plugins_url('css/persianDatepicker-default.css', dirname(__FILE__)));
 
@@ -126,7 +124,11 @@ if (!function_exists('wpjqpdp_footer_scripts')) {
 //pree($options);
             ?>
 
-                    $("<?php echo $wpjqpdp_selectors; ?>").persianDatepicker({<?php echo implode(', ', $options); ?>});
+                    //$("<?php echo $wpjqpdp_selectors; ?>").persianDatepicker({<?php echo implode(', ', $options); ?>});
+                    $("<?php echo $wpjqpdp_selectors; ?>").each(function(){
+                        var o = $(this).data("options");
+                        $(this).persianDatepicker(o); 
+                    });
 
 
                 });
