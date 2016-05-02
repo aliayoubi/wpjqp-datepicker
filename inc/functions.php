@@ -101,7 +101,7 @@ if (!function_exists('wpjqpdp_footer_scripts')) {
             <script type="text/javascript" language="javascript">
 
 
-                $(function () {
+                jQuery(function ( $ ) {
 
             <?php
             global $wpjqpdp_options;
